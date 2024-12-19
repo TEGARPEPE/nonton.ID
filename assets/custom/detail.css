@@ -1,0 +1,86 @@
+body {
+	background-color: #222;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+	.search-bar {
+		display: none;
+		/* Hilangkan search bar di layar kecil */
+	}
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.detail {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1%;
+	background-color: #8a8a8a;
+	border-radius: 5px;
+	min-width: 70%;
+	min-height: 100vh;
+	/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Memberikan efek bayangan */
+}
+
+#film {
+	display: flex;
+	min-height: 100vh;
+
+}
+
+#sidebar {
+	margin-top: 1%;
+}
+
+.footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	min-height: 80px;
+}
+
+.footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.content {
+	flex: 1;
+}
+
+#keterangan {
+	margin-top: 10px;
+}
+
+
+.card {
+	flex-direction: row;
+	width: 300px;
+	/* Pastikan lebar kartu tetap kecil */
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+}
+
+.card img {
+	width: 100px;
+	/* Pastikan gambar mengambil lebar penuh kartu */
+	min-height: 250px;
+	border-radius: 8px 8px 8px 8px;
+	/* Menghilangkan sudut tajam pada bagian atas gambar */
+	object-fit: cover;
+}
+

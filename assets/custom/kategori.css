@@ -1,0 +1,54 @@
+
+.konten {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* Atur menjadi space-around atau space-between sesuai kebutuhan */
+}
+
+.card {
+	width: 150px;
+	/* Pastikan lebar kartu tetap kecil */
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	background-color: #222;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+}
+
+.card img {
+	width: 100%;
+	/* Pastikan gambar mengambil lebar penuh kartu */
+	height: 250px;
+	border-radius: 8px 8px 0 0;
+	/* Menghilangkan sudut tajam pada bagian atas gambar */
+	object-fit: cover;
+}
+
+.jdl{
+	margin: 5px 0;
+}
+
+.kate{
+	font-size: 12px;
+	color: #555;
+}
+
+.img-wrapper {
+    width: 100%;
+    min-height: 192px; 
+    max-height: 192px; /* Atur tinggi yang diinginkan */
+    overflow: hidden; /* Potong gambar yang melampaui container */
+    display: flex; /* Untuk memusatkan gambar */
+    justify-content: center;
+    align-items: center;
+    background-color: #363636; /* Warna background jika gambar tidak ter-load */
+}
+
+.img-wrapper img {
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    object-fit: cover; /* Potong gambar agar sesuai ukuran */
+}
+

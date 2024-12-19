@@ -1,0 +1,256 @@
+body{
+	background-color: #222;
+}
+
+
+#tonton {
+	cursor: pointer;
+}
+
+#tonton :hover {
+	transform: scale(1.5px);
+}
+
+#carouselExampleCaptions {
+	margin: auto;
+	/* Pusatkan carousel */
+}
+
+#carouselExampleCaptions .carousel-inner img {
+	height: 500px;
+	/* Atur tinggi gambar */
+	object-fit: cover;
+	/* Agar gambar tetap proporsional */
+}
+
+/* Carousel wrapper */
+#carouselExampleCaptions {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+/* Carousel images */
+.carousel-inner img {
+	object-fit: cover;
+	height: 500px;
+	/* You can adjust the height as needed */
+}
+
+/* Carousel captions */
+.carousel-caption {
+	background: rgba(0, 0, 0, 0.5);
+	/* Semi-transparent background */
+	border-radius: 10px;
+	/* Rounded corners for caption */
+	padding: 15px;
+	font-size: 1.25rem;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	/* Adds shadow to text */
+}
+
+.carousel-caption h5 {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #fff;
+	/* White text */
+}
+
+.carousel-caption p {
+	color: #fff;
+	/* White text */
+}
+
+/* Carousel indicators (dots) */
+.carousel-indicators button {
+	background-color: rgba(255, 255, 255, 0.7);
+	/* Semi-transparent white for dots */
+}
+
+.carousel-indicators .active {
+	background-color: transparent;
+	/* Active dot color */
+}
+
+/* Navigation buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: transparent;
+	/* Blue color for prev/next icons */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	background-color: rgba(0, 0, 0, 0.5);
+	/* Dark background for prev/next buttons */
+	border-radius: 50%;
+	/* Round buttons */
+}
+
+/* Hover effect for prev/next buttons */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+	background-color: rgba(0, 0, 0, 0);
+	/* Darker on hover */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	background: none;
+	/* Menghapus latar belakang */
+	border-radius: 0;
+	/* Menghapus bentuk oval */
+}
+
+.konten {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* Atur menjadi space-around atau space-between sesuai kebutuhan */
+}
+
+.card {
+	width: 150px;
+	/* Pastikan lebar kartu tetap kecil */
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	background-color: #222;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+}
+
+.card img {
+	width: 100%;
+	/* Pastikan gambar mengambil lebar penuh kartu */
+	height: 250px;
+	border-radius: 8px 8px 0 0;
+	/* Menghilangkan sudut tajam pada bagian atas gambar */
+	object-fit: cover;
+}
+
+.jdl{
+	margin: 5px 0;
+}
+
+.kate{
+	font-size: 12px;
+	color: #555;
+}
+
+.img-wrapper {
+    width: 100%;
+    min-height: 192px; 
+    max-height: 192px; /* Atur tinggi yang diinginkan */
+    overflow: hidden; /* Potong gambar yang melampaui container */
+    display: flex; /* Untuk memusatkan gambar */
+    justify-content: center;
+    align-items: center;
+    background-color: #363636; /* Warna background jika gambar tidak ter-load */
+}
+
+.img-wrapper img {
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    object-fit: cover; /* Potong gambar agar sesuai ukuran */
+}
+
+
+/* Navbar Styling */
+.navbar {
+    background-color: #222 !important; /* Warna gelap untuk navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Ukuran teks logo */
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.search-bar input {
+    border: 1px solid #555;
+    border-radius: 3px;
+    background-color: #444;
+    color: #fff;
+    outline: none;
+}
+
+.search-bar input:focus {
+    border-color: #007bff;
+}
+
+.search-bar button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+.navbar-nav .nav-link {
+    color: #ddd !important;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+}
+
+/* Highlighted Button */
+.navbar-nav .cta .nav-link {
+	color: #ebf623;
+	margin-left: auto;
+font-weight: bold;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .search-bar {
+        display: none; /* Hilangkan search bar di layar kecil */
+    }
+}
+
+
+
+.search-container {
+	display: flex;
+	align-items: center;
+  }
+  
+  .search-input {
+	padding: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	background-color: #353535;
+	outline: none;
+	color: whitesmoke;
+	margin-right: 3px;
+	border: 1px solid #353535;
+	border-radius: 10px 10px 10px 10px; /* Membulatkan sudut kiri */
+	width: 200px; /* Sesuaikan lebar sesuai kebutuhan */
+  }
+
+  .search-input input[type=text]{
+	color: white;
+	font-size: 10px;
+  }
+  
+  .search-button {
+	background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 2px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
